@@ -820,7 +820,29 @@ h1, h2, h3, h4, h5, h6 {
    Creative Enhancements
    =========================== */
 
-/* Custom Logo SVG */
+/* Official ECoS Logo */
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.logo-mark:hover .logo-img {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* Footer variant: subtle white card so the dark green logo
+   reads cleanly against the navy footer background */
+.footer .logo-img {
+  background: white;
+  padding: 8px 10px;
+  border-radius: 10px;
+  height: 70px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Legacy SVG class kept for any inline marks still in the page */
 .logo-svg {
   width: 44px;
   height: 44px;
