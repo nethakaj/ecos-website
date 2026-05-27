@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECoS | Environmental Consulting Services - Maryland, Virginia, DC</title>
+  <meta name="description" content="ECoS provides expert environmental consulting, industrial hygiene, asbestos abatement, construction, facility maintenance, and IT solutions for federal, state, and commercial clients across Maryland, Virginia, and Washington D.C." />
+  <meta name="keywords" content="Environmental Consulting Maryland, Asbestos Abatement DC, Government Contractor NAICS 541330, Industrial Hygienist Potomac, EHS Consulting, Facility Maintenance Virginia" />
+  <meta name="author" content="Environmental Consulting Services, LLC" />
+  <meta property="og:title" content="ECoS | Environmental Consulting Services" />
+  <meta property="og:description" content="Your trusted partner in environmental consultation, compliance, construction, and IT infrastructure across the DMV region." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="container mx-auto px-4 py-2">
+      <div class="top-bar-info flex flex-wrap justify-between items-center gap-2">
+        <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm">
+          <span><i class="opacity-75">⏱</i> Mon - Fri: 09:00 AM - 09:00 PM</span>
+          <span class="hidden sm:inline">|</span>
+          <a href="tel:+13012150163" class="hover:text-white"><span>📞</span> +1 (301) 215-0163</a>
+          <span class="hidden sm:inline">|</span>
+          <a href="mailto:info@ecosusa.biz" class="hover:text-white"><span>✉</span> info@ecosusa.biz</a>
+        </div>
+        <div class="hidden md:flex items-center gap-3 text-xs">
+          <span class="text-emerald-400">●</span>
+          <span>SAM Registered Small Business</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4 relative">
+        <a href="index.html" class="logo-mark">
+          <svg class="logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="ECoS logo">
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0f2942"/>
+                <stop offset="100%" stop-color="#059669"/>
+              </linearGradient>
+            </defs>
+            <path d="M32 4 L56 14 V32 C56 46 45 56 32 60 C19 56 8 46 8 32 V14 Z" fill="url(#logoGrad)"/>
+            <g class="leaf">
+              <path d="M32 18 C24 24 22 32 28 40 C30 36 34 32 40 30 C36 38 30 42 24 42 C24 46 28 48 32 48 C40 48 46 42 46 32 C46 24 40 20 32 18 Z" fill="#10b981"/>
+              <circle cx="32" cy="32" r="2" fill="#fff"/>
+            </g>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">ECoS</span>
+            <span class="logo-tag">Environmental Consulting Services</span>
+          </div>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+        <nav class="nav-links flex items-center gap-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="ecos-it.html" class="nav-link">ECoS IT</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+          <a href="contact.html" class="btn-primary nav-cta-desktop" style="padding: 0.65rem 1.5rem;">Get A Quote</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container mx-auto px-4">
+      <div class="hero-content max-w-4xl">
+        <span class="eyebrow-hero inline-block text-emerald-300 font-semibold tracking-widest uppercase text-sm mb-4">Building a Compliant, Sustainable Future</span>
+        <h1>Building Future With Passion</h1>
+        <p class="lead">Your trusted partner in environmental consultation, regulatory compliance, construction, and specialized IT infrastructure across Maryland, Virginia, and Washington D.C.</p>
+        <div class="hero-buttons flex flex-wrap gap-4">
+          <a href="services.html" class="btn-primary">Our Services</a>
+          <a href="contact.html" class="btn-secondary">Get A Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <!-- Wave divider -->
+    <div class="wave-divider" style="position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+        <path d="M0,40 C240,70 480,10 720,30 C960,50 1200,15 1440,40 L1440,70 L0,70 Z" fill="#0f2942"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Stats Counter -->
+  <section class="stats-section spotlight">
+    <div class="float-shape s1"></div>
+    <div class="float-shape s2"></div>
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="stat-item">
+          <div class="stat-number" data-target="53" data-suffix="+">0+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="34" data-suffix="+">0+</div>
+          <div class="stat-label">Completed Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="23" data-suffix="+">0+</div>
+          <div class="stat-label">Industry Awards</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="31" data-suffix="+">0+</div>
+          <div class="stat-label">Expert Professionals</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAICS Marquee -->
+  <div class="marquee" aria-label="NAICS code coverage">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 541330</strong> Engineering Services</div>
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 236220</strong> Commercial Building Construction</div>
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 541620</strong> Environmental Consulting</div>
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 238910</strong> Site Preparation</div>
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 238310</strong> Drywall &amp; Insulation</div>
+      <div class="marquee-item"><span class="dot"></span><strong>NAICS 562910</strong> Remediation Services</div>
+      <div class="marquee-item"><span class="dot"></span><strong>SAM.gov Active</strong> Small Business</div>
+      <div class="marquee-item"><span class="dot"></span><strong>CIH · CSP · CHMM · P.E.</strong> Credentialed</div>
+    </div>
+  </div>
+
+  <!-- About / Intro Strip -->
+  <section class="section bg-gray-light">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="fade-in-up">
+          <span class="eyebrow text-emerald font-semibold tracking-widest uppercase text-sm">Who We Are</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4">A Multidisciplinary Government & Commercial Contracting Firm</h2>
+          <div class="divider-emerald"></div>
+          <p class="text-gray-700 mb-4">
+            Headquartered in Potomac, Maryland, ECoS bridges the gap between infrastructural development and rigorous environmental stewardship. We deliver authoritative, compliance-driven solutions to federal agencies, state and local governments, and commercial enterprises across the DMV region.
+          </p>
+          <p class="text-gray-700 mb-6">
+            Backed by professionally credentialed experts — including Certified Industrial Hygienists, Professional Engineers, and Certified Safety Professionals — we operate with the precision required for highly regulated environments.
+          </p>
+          <a href="about.html" class="btn-outline">Learn About ECoS</a>
+        </div>
+        <div class="fade-in-up">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+               alt="Environmental consulting engineers in the field"
+               class="rounded-xl shadow-2xl w-full h-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Pillars -->
+  <section class="section">
+    <div class="container mx-auto px-4">
+      <div class="section-title">
+        <span class="eyebrow">Core Capabilities</span>
+        <h2>Three Pillars. One Standard of Excellence.</h2>
+        <p>Our integrated service model combines deep regulatory expertise with hands-on operational delivery — under a single, accountable contracting partner.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="pillar-card tilt-card reveal">
+          <div class="pillar-card-image" style="background-image: url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+            <div class="pillar-card-icon">
+              <svg class="pillar-svg-icon" viewBox="0 0 24 24">
+                <path d="M12 2 L4 6 V12 C4 17 7 21 12 22 C17 21 20 17 20 12 V6 Z"/>
+                <path d="M9 12 L11 14 L15 10"/>
+              </svg>
+            </div>
+          </div>
+          <div class="pillar-card-body">
+            <h3>Environmental, Health & Safety</h3>
+            <p>Risk reduction, regulatory compliance, and informed liabilities management — engineered to safeguard people, property, and the public record.</p>
+            <a href="services.html#ehs" class="pillar-link">Explore EHS Services <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="pillar-card tilt-card reveal delay-1">
+          <div class="pillar-card-image" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+            <div class="pillar-card-icon">
+              <svg class="pillar-svg-icon" viewBox="0 0 24 24">
+                <path d="M3 21 L21 21"/>
+                <path d="M5 21 V10 L12 4 L19 10 V21"/>
+                <path d="M9 21 V14 H15 V21"/>
+                <path d="M10 11 H14"/>
+              </svg>
+            </div>
+          </div>
+          <div class="pillar-card-body">
+            <h3>Construction</h3>
+            <p>Regional, urban, government, and commercial structural projects spanning Maryland — delivered with environmental oversight built into every phase.</p>
+            <a href="services.html#construction" class="pillar-link">View Construction Work <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="pillar-card tilt-card reveal delay-2">
+          <div class="pillar-card-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');">
+            <div class="pillar-card-icon">
+              <svg class="pillar-svg-icon" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="13" rx="2"/>
+                <path d="M8 21 H16"/>
+                <path d="M12 17 V21"/>
+                <path d="M7 10 L9 12 L7 14"/>
+                <path d="M13 14 H17"/>
+              </svg>
+            </div>
+          </div>
+          <div class="pillar-card-body">
+            <h3>ECoS IT Solutions</h3>
+            <p>Specialized corporate, government, and residential technical infrastructure — cyber-security hardening, network deployment, and managed services.</p>
+            <a href="ecos-it.html" class="pillar-link">Discover ECoS IT <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Credentials Strip -->
+  <section class="section bg-gray-light">
+    <div class="container mx-auto px-4">
+      <div class="section-title">
+        <span class="eyebrow">Government Procurement Ready</span>
+        <h2>Credentialed. Registered. Compliant.</h2>
+      </div>
+      <div class="compliance-grid">
+        <div class="compliance-item">
+          <strong>SAM.gov</strong>
+          <span>Active Registration with Reps & Certs</span>
+        </div>
+        <div class="compliance-item">
+          <strong>541330</strong>
+          <span>Engineering Services</span>
+        </div>
+        <div class="compliance-item">
+          <strong>236220</strong>
+          <span>Commercial Building Construction</span>
+        </div>
+        <div class="compliance-item">
+          <strong>541620</strong>
+          <span>Environmental Consulting</span>
+        </div>
+        <div class="compliance-item">
+          <strong>238910</strong>
+          <span>Site Preparation Contractors</span>
+        </div>
+        <div class="compliance-item">
+          <strong>562910</strong>
+          <span>Remediation Services</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Contact Block -->
+  <section class="section">
+    <div class="container mx-auto px-4">
+      <div class="cta-block spotlight reveal">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <span class="inline-block text-emerald-300 font-semibold tracking-widest uppercase text-sm mb-3">Request a Consultation</span>
+            <h2 class="text-3xl md:text-4xl mb-4">Start Your Project With a Compliance-First Partner</h2>
+            <p class="text-blue-100 text-lg mb-2">Select the service you need and a senior member of our team will respond within one business day.</p>
+            <p class="text-blue-100 opacity-90">No obligation. No automated routing. Just direct expert response.</p>
+          </div>
+
+          <form data-contact-form class="bg-white rounded-xl p-6 md:p-8 shadow-2xl">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label" for="home-name">Full Name *</label>
+                <input id="home-name" name="name" type="text" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="home-email">Email *</label>
+                <input id="home-email" name="email" type="email" class="form-input" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="home-service">Service Needed</label>
+              <select id="home-service" name="service" class="form-select">
+                <option value="">Select a service…</option>
+                <option>Environmental Health & Safety (EHS)</option>
+                <option>Asbestos Abatement & Remediation</option>
+                <option>Facility Maintenance</option>
+                <option>Commercial Construction</option>
+                <option>Demolition Services</option>
+                <option>Restoration & Modernization</option>
+                <option>ECoS IT Solutions</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="home-message">Project Description *</label>
+              <textarea id="home-message" name="message" rows="3" class="form-textarea" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full">Request Consultation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <div class="logo-mark mb-4">
+            <svg class="logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-label="ECoS logo">
+              <defs>
+                <linearGradient id="logoGradF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#1e3a5f"/>
+                  <stop offset="100%" stop-color="#059669"/>
+                </linearGradient>
+              </defs>
+              <path d="M32 4 L56 14 V32 C56 46 45 56 32 60 C19 56 8 46 8 32 V14 Z" fill="url(#logoGradF1)"/>
+              <g class="leaf">
+                <path d="M32 18 C24 24 22 32 28 40 C30 36 34 32 40 30 C36 38 30 42 24 42 C24 46 28 48 32 48 C40 48 46 42 46 32 C46 24 40 20 32 18 Z" fill="#10b981"/>
+                <circle cx="32" cy="32" r="2" fill="#fff"/>
+              </g>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-name" style="color: white;">ECoS</span>
+              <span class="logo-tag" style="color: rgba(255,255,255,0.6);">Environmental Consulting</span>
+            </div>
+          </div>
+          <p class="text-sm opacity-80 mb-4">A multidisciplinary government and commercial contracting firm specializing in environmental compliance, construction, and IT infrastructure.</p>
+          <form class="flex gap-2">
+            <input type="email" placeholder="Your email" class="form-input text-sm" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white;" />
+            <button type="button" class="btn-primary text-sm" style="padding: 0.6rem 1rem;">Subscribe</button>
+          </form>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ecos-it.html">ECoS IT</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Project Gallery</h4>
+          <div class="gallery-grid">
+            <div style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=200&q=70');"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=200&q=70');"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=200&q=70');"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?w=200&q=70');"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=200&q=70');"></div>
+            <div style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&q=70');"></div>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex gap-3"><span class="text-emerald-400">📍</span><span>12111 Stoney Creek Road<br/>Potomac, MD</span></li>
+            <li class="flex gap-3"><span class="text-emerald-400">📞</span><a href="tel:+13012150163">+1 (301) 215-0163</a></li>
+            <li class="flex gap-3"><span class="text-emerald-400">✉</span><a href="mailto:info@ecosusa.biz">info@ecosusa.biz</a></li>
+            <li class="flex gap-3"><span class="text-emerald-400">⏱</span><span>Mon - Fri: 09:00 AM - 09:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container mx-auto px-4">
+        <p>&copy; ECOS.com, All Rights Reserved. | Environmental Consulting Services, LLC</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
