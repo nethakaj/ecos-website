@@ -280,7 +280,11 @@
             <p class="text-blue-100 opacity-90">No obligation. No automated routing. Just direct expert response.</p>
           </div>
 
-          <form data-contact-form class="bg-white rounded-xl p-6 md:p-8 shadow-2xl">
+          <form data-contact-form action="https://api.web3forms.com/submit" method="POST" class="bg-white rounded-xl p-6 md:p-8 shadow-2xl">
+            <input type="hidden" name="access_key" value="0ba80ea7-ed4d-4bdf-89ec-323a2fa11093" />
+            <input type="hidden" name="subject" value="New ECoS Consultation Request (Homepage)" />
+            <input type="hidden" name="from_name" value="ECoS Website — Home" />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
             <div class="grid sm:grid-cols-2 gap-4">
               <div class="form-group">
                 <label class="form-label" for="home-name">Full Name *</label>

@@ -115,14 +115,17 @@ function initScrollAnimations() {
   elements.forEach((el) => observer.observe(el));
 }
 
-/* Contact form handler */
+/* Contact form handler — submits to Web3Forms */
 function initContactForm() {
   const forms = document.querySelectorAll('form[data-contact-form]');
   forms.forEach((form) => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const formData = new FormData(form);
       const data = Object.fromEntries(formData.entries());
+
+      // Honeypot: if filled, silently drop
+      if (data.botcheck) return;
 
       // Validation
       if (!data.name || !data.email || !data.message) {
@@ -136,7 +139,6 @@ function initContactForm() {
         return;
       }
 
-      // Simulate submission
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn ? submitBtn.textContent : '';
       if (submitBtn) {
@@ -144,14 +146,30 @@ function initContactForm() {
         submitBtn.textContent = 'Sending...';
       }
 
-      setTimeout(() => {
-        showFormFeedback(form, 'Thank you. A member of our team will contact you within one business day.', 'success');
-        form.reset();
+      try {
+        const endpoint = form.action || 'https://api.web3forms.com/submit';
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: formData
+        });
+        const result = await res.json().catch(() => ({}));
+
+        if (res.ok && result.success !== false) {
+          showFormFeedback(form, 'Thank you. A member of our team will contact you within one business day.', 'success');
+          form.reset();
+        } else {
+          const msg = result.message || 'Submission failed. Please try again, or email info@ecosusa.biz directly.';
+          showFormFeedback(form, msg, 'error');
+        }
+      } catch (err) {
+        showFormFeedback(form, 'Network error. Please try again, or email info@ecosusa.biz directly.', 'error');
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = originalText;
         }
-      }, 900);
+      }
     });
   });
 }
